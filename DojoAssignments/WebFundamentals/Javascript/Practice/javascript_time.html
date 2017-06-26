@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Working Assignment</title>
+	<meta name="description" content="A really cool site!">
+	<script type="text/javascript">
+		var HOUR = 8;
+		var MINUTE = 50;
+		var PERIOD = "AM";
+		var WHAT;
+		var WHEN;
+		if (MINUTE > 30) {
+			WHAT = "almost";
+			HOUR += 1;
+		}
+		else
+		{
+			WHAT = "just after";
+		}
+		if (PERIOD == "AM") {
+			WHEN = "morning";
+		}
+		console.log ("It's", WHAT, HOUR, "in the", WHEN);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

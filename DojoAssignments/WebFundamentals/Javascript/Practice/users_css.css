@@ -1,0 +1,48 @@
+* {
+ outline: 0px dotted red;
+ padding: 0px;
+ border: 0px;
+ font-family: sans-serif;
+ margin: 0 auto;
+}
+#wrap {
+	width: 500px;
+}
+
+#table {
+	border: 1px solid black;
+	display: inline-block;
+}
+#add_users {
+	display: inline-block;
+}
+
+h1 {
+	border-bottom: 2px solid gray;
+	width: 300px;
+	margin-bottom: 20px;
+}
+ul {
+	list-style: none;
+	text-align: right;
+}
+ul input {
+
+}
+li {
+	margin-top: 5px;
+}
+li input {
+	border: 1px solid black;
+	margin-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#submit_form {
+	padding: 5px 15px 5px 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 200px;
+}

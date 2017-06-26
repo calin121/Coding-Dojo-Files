@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Chance</title>
+	<meta name="description" content="A really cool site!">
+	<script type="text/javascript">
+		"use strict";
+		function GameOfChance(coins, luky_number, pull_out) {
+			var num;
+			var won;
+			for (coins; coins > 0; coins--) {
+				num = Math.trunc(Math.random()*100);
+				console.log(coins, luky_number, num);
+				if (num === luky_number) {
+					won = Math.trunc(Math.random()*100)
+				coins += won;
+				console.log("You just won", won, "coins. Your new balance is", coins, "coins!");
+				if (coins >= pull_out) {
+					break;
+				}
+			}
+			}
+			if (coins >= pull_out) {
+				console.log("Congradulations!! You just walked away with",coins, "coins!!");
+			}
+			else console.log("Looks like you lost it all! Better luck next time!")
+		}
+		GameOfChance(99, 45, 200);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

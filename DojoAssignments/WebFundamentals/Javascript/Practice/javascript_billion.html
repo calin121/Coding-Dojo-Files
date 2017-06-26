@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Working Assignment</title>
+	<meta name="description" content="A really cool site!">
+	<script type="text/javascript">
+		function forABillion() {
+			var sum = .01;
+			var	number = 30;
+			for (var days = 1; days <= number; days++) {
+				sum *= 2;
+			}
+			return sum;
+		}
+		function make10K() {
+			var sum = .01;
+			var number = Infinity;
+			for (var days = 1; days <= number; days++) {
+				sum *= 2;
+				if (sum >= 10000) {
+					break;
+				}
+			}
+			return days
+		}
+		function make1Billion(){
+			var sum = .01;
+			var number = Infinity;
+			for (var days = 1; days <= number; days++) {
+				sum *= 2;
+				if (sum >= 1000000000) {
+					break;
+				}
+			}
+			return days
+		}
+		function whileMake1Billion() {
+			var sum = .01;
+			var number = 1;
+			while (number < Infinity) {
+				if (sum >= 1000000000) {
+					break;
+				}
+				sum *= 2;
+				number += 1;
+			}
+			return number;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

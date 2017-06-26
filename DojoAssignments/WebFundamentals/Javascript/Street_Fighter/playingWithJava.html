@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students and Instructors</title>
+	<meta name="description" content="A really cool site!">
+	<link rel="stylesheet" type="text/css" href="streetFighterCSS.css">
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript" src="streetfighterJS.js"></script>
+
+
+  <style>
+  p {
+    margin: 20px 0 0;
+  }
+  b {
+    color: blue;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<input id="check1" type="checkbox" checked="checked">
+<select class='dropdown'>
+						<option class='arena_select' alt='none'>Select Ninja</option>
+						<option class='arena_select' alt='leo'>Leonardo</option>
+						<option class='arena_select' alt='mikey'>Michaelangelo</option>
+						<option class='arena_select' alt='donny'>Donatelo</option>
+						<option class='arena_select' alt='raphael'>Raphael</option>
+					</select>
+<label for="check1">Check me</label>
+<p></p>
+ 
+<script>
+$( "input" )
+  .change(function() {
+    var $input = $( this );
+    $( "p" ).html( ".attr( 'checked' ): <b>" + $input.attr( "checked" ) + "</b><br>" +
+      ".prop( 'checked' ): <b>" + $input.prop( "checked" ) + "</b><br>" +
+      ".is( ':checked' ): <b>" + $input.is( ":checked" ) + "</b>" );
+  })
+  .change();
+</script>
+
+
+	</script>
+</head> 
+<body>
+
+
+
+				<div id='select_box2'>
+					<h1 class='select'>Select Players</h1>
+					<form class='figthers'>
+						<select class='dropdown' id='drop1'>
+							<option class='arena_select' alt='none'>Select Ninja</option>
+							<option class='arena_select' alt='leo'>Leonardo</option>
+							<option class='arena_select' alt='mikey'>Michaelangelo</option>
+							<option class='arena_select' alt='donny'>Donatelo</option>
+							<option class='arena_select' alt='raphael'>Raphael</option>
+						</select>
+					</form>
+					<form class='figthers'>
+						<select class='dropdown' id='drop2'>
+							<option class='arena_select' alt='none'>Select Ninja</option>
+							<option class='arena_select' alt='leo'>Leonardo</option>
+							<option class='arena_select' alt='mikey'>Michaelangelo</option>
+							<option class='arena_select' alt='donny'>Donatelo</option>
+							<option class='arena_select' alt='raphael'>Raphael</option>
+						</select>
+					</form>
+				</div>
+
+
+
+</body>
+</html>

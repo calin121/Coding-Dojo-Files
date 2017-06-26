@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<form>
+			<h1>My Regristration Form</h1>
+			<table>
+				<tbody>
+					<tr>
+						<td><label>First Name:</label></td>
+						<td><input type="text" name="first_name"></td>
+					</tr>
+					<tr>
+						<td><label>Last Name:</label></td>
+						<td><input type="text" name="last_name"></td>
+					</tr>
+					<tr>
+						<td><label>Email:</label></td>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<td><label>Password:</label></td>
+						<td><input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td><label>PW Confirm:</label></td>
+						<td><input type="password" name="pw_confirm"></td>
+					</tr>
+					<tr> 
+						<td><label>Birthday:</label></td>
+						<td><input type="date" name="birthday"></td>
+					</tr>
+				</tbody>
+			</table><br>
+			<label>
+				Male<input type="radio" name="gender" value="male">
+			</label> 
+			<label>
+				Female<input type="radio" name="gender" value="female">
+			</label> 
+			<label>
+				Other<input type="radio" name="gender" value="other">
+			</label><br>
+			<p>A short description oabout yourself:</p>
+			<textarea name="description"></textarea><br>
+			<p>Favorite Language
+				<select>
+					<option>Select One</option>
+					<option value="Python">Python</option>
+					<option value="Java_Script">Java Script</option>
+					<option value="PHP">PHP</option>
+					<option value="Ruby">Ruby</option>
+					<option value="C++">C++</option>
+				</select>
+			</p>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

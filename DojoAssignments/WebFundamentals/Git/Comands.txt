@@ -1,0 +1,12 @@
+git init
+git add
+git status
+git commit -m "..."
+git checkout ____
+git branch
+git log
+git blame ____
+git remote add origin ___
+git push
+git pull
+git clone

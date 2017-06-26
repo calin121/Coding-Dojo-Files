@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Working Assignment</title>
+	<meta name="description" content="A really cool site!">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			alert("you are now working with jquery");
+
+			$("a").click(function(){
+				alert("you are now leaving the page");
+			})
+			// //effects method they toggle the visibility property of items
+			$("p").hide();
+			$("#hide").click(function(){
+				$("p").hide();
+			})
+			$("#show").click(function(){
+				$("p").show();
+			})
+
+			// //manipulation methods add/change either text or html to your document
+			$("h3").hover(function(){
+				$("h2").text("Go see the Space Needle!");
+			}, function(){alert("now invoking the second function!")})
+			$(".append").click(function(){
+				$(".result").append("<h4>.append adds HTML! <h4>");
+			})
+
+			// //CSS method
+
+			$("button").click(function(){
+				$("button").css('background-color',"yellow");
+			})
+		});
+	</script>
+</head>
+<body>
+	<p>This is a paragraph!!</p>
+
+	<p>This is also a paragraph!</p>
+	<button id="hide">This will hide all paragraphs!</button>
+	<button id="show">Click to show all paragraphs</button>
+	<a id="mylink" href="http://www.google.com">go to Google!</a>
+	<h3>Mountain View, California</h3>
+	<h2>Seattle, Washington</h2>
+	<button class="append">Click to see . append work!</button>
+	<div class="result"></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+TO DO:
+
+*Rats DB
+*CRUD operations
+*Display rat info
+*Login/reg w/Express Session
+*Error handling/validations
+*Comments?
+*Users own rats?

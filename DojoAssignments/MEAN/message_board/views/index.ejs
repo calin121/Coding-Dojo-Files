@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message Board</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>My Message Board</h1>
+	<div id="messageForm">
+		<form action="/post_message" method="Post">
+			<label class="name" for="name">Name:</label>
+			<input class="name" type="text" name="name" id="name">
+			<label class="message" for="message">Message:</label>
+			<textarea class="message" name="message" id="message" rows="5" cols="40"></textarea>
+			<input type="submit" value="Post Message">
+		</form>
+	</div>
+	<% for (var i in messages) {%>
+		<div id="posted_messages">
+			<h3>Name: <%= messages[i].name %></h3>
+			<h3>Message: <%= messages[i].message %></h3>
+			<h3>Posted On: <%= messages[i].updatedAt.toDateString() %></h3>
+			<div id="posted_comments">
+				<ul>
+				<% for (var j = 0; j < messages[i].comments.length; j++) { %>
+					<li>
+						<ul>
+							<li>Name: <%= messages[i].comments[j].name %></li>
+							<li>Comment: <%= messages[i].comments[j].comment %></li>
+							<li>Posted On: <%= messages[i].comments[j].updatedAt.toDateString() %></li>
+							<hr>
+						</ul>
+					</li>
+				<% } %>
+				</ul>
+			</div>
+			<div id="commentForm">
+				<form action="/post_comment/<%=messages[i].id %>" method="Post">
+					<div>
+						<label class="name2" for="name">Name:</label>
+						<input class="name2" type="text" name="name" id="name">
+					</div>
+					<div>
+						<label class="comment" for="comment">Comment:</label>
+						<textarea class="comment" name="comment" id="comment" rows="2" cols="40"></textarea>
+					</div>
+					<input type="submit" value="Leave Comment">
+				</form>
+			</div>
+		</div>
+	<% } %>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Users</title>
+		<meta name="description" content="A really cool site!">
+		<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script type="text/javascript" src='contactCard_js.js'></script>
+		<link rel="stylesheet" type="text/css" href="contactCard_css.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="add_users">
+				<form id="adding_user_data" action="users.html" method="post">
+					<ul id="user_info">
+						<li>First Name:<input id="1" type="text" name="first_name" placeholder="First Name"></li>
+						<li>Last Name:<input id="2" type="text" name="last_name" placeholder="Last Name"></li>
+						<li id="descrption_area">Description:</li>
+						<li><textarea class="input3" id="3" type="textarea" name="description" placeholder="Description"></textarea></li>
+					</ul>
+				</form>
+				<button id="submit_form">Add User</button>
+			</div>
+			<div id="users">
+				<div>Users</div>
+			</div>
+		</div>
+	</body>
+</html>
+

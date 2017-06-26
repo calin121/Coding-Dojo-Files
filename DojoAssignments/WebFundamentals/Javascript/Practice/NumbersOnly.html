@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers Only</title>
+	<meta name="description" content="A really cool site!">
+	<script type="text/javascript">
+		"use strict";
+		function numbersOnly(arr) {
+			if (Array.isArray(arr)) {
+				var arrNew = [];
+				for (var x = 0; x < arr.length; x++) {
+					if (! isNaN(arr[x]) {
+						arrNew.push(arr[x]);
+					}
+				}
+			}
+			return arrNew;
+		}
+		numbersOnly(["alpha", 4, 18, -42, "craig", 2, "dog", "34"]);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

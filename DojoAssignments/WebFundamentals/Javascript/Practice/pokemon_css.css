@@ -1,0 +1,18 @@
+* {
+ outline: 0px dotted red;
+ padding: 0px;
+ border: 0px;
+ font-family: sans-serif;
+ margin: 0 auto;
+}
+#wrap {
+	width: 950px;
+}
+.poke_image {
+	display: inline-block;
+	width: 100px;
+	vertical-align: middle;
+}
+#pokemon_images {
+	margin-left: 25px;
+}

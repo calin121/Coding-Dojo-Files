@@ -1,0 +1,17 @@
+#messageForm {
+	border: 1px solid black;
+	padding: 1%;
+}
+.message {
+	display: block;
+}
+.name {
+	display: block;
+}
+#posted_messages {
+	border: 1px solid black;
+	padding: 1%;
+}
+ul {
+	list-style: none;
+}

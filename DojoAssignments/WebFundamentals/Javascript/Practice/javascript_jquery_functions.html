@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Working Assignment</title>
+	<meta name="description" content="A really cool site!">
+	<link rel="stylesheet" type="text/css" href="jquary.css">
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+// //using the .click jquary function
+			$("#hello").click(function(){
+				alert("Hello World!")
+			});
+
+// //using the .hide jquary function
+			$("#world").hide();
+			$("#hide_doom").click(function(){
+				$("#doom").hide();
+
+// //using the .show jquary function
+			});
+			$("#show_doom").click(function(){
+				$("#doom").show();
+			});
+			$("#doom").click(function(){
+				$("#world").show();
+			});
+
+// //using the .css jquary function
+			// $("#doom").css("background-color", "red");
+			// $("#img_doom").css("max-height", "120px");
+			// $("#world").css("max-height", "120px");
+
+// //using the .toggle jquary function
+			$("#toggle_doom").click(function(){
+				$("#doom").toggle();
+			});
+
+// // using the .slideDown jquary function
+			$("#slide_down_world").click(function(){
+				$("#world").slideDown();
+			});
+
+// // using the .slideUp jquary function
+			$("#slide_up_world").click(function(){
+				$("#world").slideUp();
+			});
+
+// // using the .slideToggle jquary function
+			$("#toggle").click(function(){
+				$("#world, #doom").slideToggle();
+			});
+
+// // using the .fadeIn jquary function
+
+			$("#fade_doom_in").click(function(){
+				$("#doom").fadeIn();
+			});
+
+// // using the .fadeOut jquary function
+			$("#fade_doom_out").click(function(){
+				$("#doom").fadeOut();
+			});
+
+// // using the .addClass jquary function
+			$("#bigger").click(function(){
+				$("#world").addClass("grow");
+			});
+
+// using the .before jquary funciton
+			$("#hide_doom").before($("#toggle_doom"));
+
+// using the .after jquary function
+			$("#toggle").after($("#slide_down_world"));
+
+// use the .append jquary function
+			$(".make_new").click(function(){
+				$("#new_buttons").append("<button class='make_new'>Make a New Button</button><br><br>");
+			});
+			
+
+// use the .html jquary function
+			$("#add_html").click(function() {
+				$("#doom").html("<div><button id='doom'><img style='max-width: 120px' id='img_doom' src='https://i.kinja-img.com/gawker-media/image/upload/s--X5eB0ROc--/c_scale,f_auto,fl_progressive,q_80,w_800/1415914174402575245.png' alt='big red button saying do not press'></button>You just entered some randome text via .html</div>");
+			});
+
+// use the .attr jquary function
+			$("#add_text").click(function() {
+				$("#world").attr("alt", "A world about to blow up");
+			});
+
+// use the .val jquary function
+			$("#take_val").click(function() {
+				$("#toggle").val()
+			});
+
+//	use the .text jquary function
+
+			$("#get_text").click(function() {
+				$("p").text('This text is being changed!');
+			});
+
+// use the .data jquary function
+			$()
+
+		});
+			$(document).on("click", ".make_new", function() {
+				$("#new_buttons").append("<button class='make_new'>Make a New Button</button><br><br>");
+			});
+	</script>
+</head>
+<body>
+	<button class="make_new">Make a New Button</button><br><br>
+	<button id="hello">Click Here!</button><br><br>
+	<button id="doom"><img style="max-width: 120px" id="img_doom" src="https://i.kinja-img.com/gawker-media/image/upload/s--X5eB0ROc--/c_scale,f_auto,fl_progressive,q_80,w_800/1415914174402575245.png" alt="big red button saying do not press"></button><br><br>
+	<button id="hide_doom">Hide the Button of Doom!</button>
+	<button id="show_doom">Show the Button of Doom!</button>
+	<button id="toggle_doom">Toggle the button of Doom!</button><br>
+	<img id="world" src="http://www.clipartkid.com/images/739/clip-art-illustration-earth-as-a-bomb-with-a-lighted-spark-and-ready-kAEZE4-clipart.jpg" alt="a world with a fuze" style="max-width: 120px"><br>
+	<button id="slide_down_world">Slide Down World</button>
+	<button id="slide_up_world">Slide Up World</button>
+	<button id="toggle">Toggle Slide World & DOOM</button><br><br>
+	<button id="fade_doom_in">Fade Doom Button In!</button>
+	<button id="fade_doom_out">Fade Doom Button Out!</button><br><br>
+	<button id="bigger">Make DOOM button bigger!</button><br><br>
+	<button id="add_html">Add HTML</button><br><br>
+	<button id="add_text">Add text</button>
+	<button id="take_val">Take Values of Togle Slide World and put them onto Toggle the button of Doom</button>
+	<button id="get_text">Take Text</button>
+	<p>What text is being taken?</p>
+	<div id="new_buttons"><h1>Apended Buttons</h1><br></div>
+</body>
+</html>

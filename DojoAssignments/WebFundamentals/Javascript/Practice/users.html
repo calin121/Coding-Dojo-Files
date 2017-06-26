@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Users</title>
+		<meta name="description" content="A really cool site!">
+		<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script type="text/javascript" src='users_js.js'></script>
+		<link rel="stylesheet" type="text/css" href="users_css.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="user_list">
+				<table id="table">
+					<thead id="table_head">
+						<tr id="table_items">
+							<th id="head_first_name">First Name</th>
+							<th id="last_name">Last Name</th>
+							<th id="email_address">Email Address</th>
+						<th id="contact_num">Contact #</th>
+						</tr>					
+					</thead>
+					<tbody id="enter_data">
+						<tr id="enter_item_lines">
+							<td id="enter_first_name"></td>
+							<td id="enter_last_name"></td>
+							<td id="enter_email_address"></td>
+							<td id="enter_contact_num"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="add_users">
+				<h1 id="title">Add User</h1>
+				<form id="adding_user_data" action="users.html" method="post">
+					<ul id="user_info">
+						<li>First Name:<input id="1" type="text" name="first_name" placeholder="First Name"></li>
+						<li>Last Name:<input id="2" type="text" name="last_name" placeholder="Last Name"></li>
+						<li>Email Address:<input id="3" type="text" name="email_add" placeholder="Email Address"></li>
+						<li>Contact No.:<input id="4" type="text" name="phone_no" placeholder="Phone #"></li>
+					</ul>
+				</form>
+				<button id="submit_form">Add User</button>
+			</div>
+		</div>
+	</body>
+</html>
+
